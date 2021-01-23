@@ -1,0 +1,14 @@
+prefix=c:/Users/qt/work/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Gui
+Description: Qt Gui module
+Version: 5.15.2
+Libs: -L${libdir} -lQt5Gui 
+Libs.private: c:/Users/qt/work/install/lib/libQt5Core.a c:/Users/qt/work/install/lib/libqtpcre2.a c:/Users/qt/work/install/lib/libqtlibpng.a c:/Users/qt/work/install/lib/libQt5Core.a c:/Users/qt/work/install/lib/libqtpcre2.a c:/Users/qt/work/install/lib/libqtharfbuzz.a   
+Cflags: -DQT_GUI_LIB -I${includedir}/QtGui -I${includedir}
+Requires: Qt5Core
+

@@ -1,0 +1,14 @@
+prefix=C:/Users/qt/work/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 QuickTest
+Description: Qt QuickTest module
+Version: 5.15.2
+Libs: -L${libdir} -lQt5QuickTest 
+Libs.private: C:/Users/qt/work/install/lib/libQt5Test.a C:/Users/qt/work/install/lib/libQt5Widgets.a C:/Users/qt/work/install/lib/libQt5Gui.a C:/Users/qt/work/install/lib/libqtlibpng.a C:/Users/qt/work/install/lib/libqtharfbuzz.a C:/Users/qt/work/install/lib/libQt5Core.a C:/Users/qt/work/install/lib/libqtpcre2.a C:/Users/qt/work/install/lib/libQt5Quick.a C:/Users/qt/work/install/lib/libQt5QmlModels.a C:/Users/qt/work/install/lib/libQt5Qml.a C:/Users/qt/work/install/lib/libQt5Gui.a C:/Users/qt/work/install/lib/libqtlibpng.a C:/Users/qt/work/install/lib/libqtharfbuzz.a C:/Users/qt/work/install/lib/libQt5Network.a C:/Users/qt/work/install/lib/libQt5Core.a C:/Users/qt/work/install/lib/libqtpcre2.a   
+Cflags: -DQT_QMLTEST_LIB -I${includedir}/QtQuickTest -I${includedir}
+Requires: Qt5Core Qt5Test Qt5Widgets
+

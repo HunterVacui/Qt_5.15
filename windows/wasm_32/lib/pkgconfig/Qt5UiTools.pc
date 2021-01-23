@@ -1,0 +1,14 @@
+prefix=C:/Users/qt/work/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 UiTools
+Description: Qt UiTools module
+Version: 5.15.2
+Libs: -L${libdir} -lQt5UiTools 
+Libs.private: C:/Users/qt/work/install/lib/libQt5Widgets.a C:/Users/qt/work/install/lib/libQt5Gui.a C:/Users/qt/work/install/lib/libqtlibpng.a C:/Users/qt/work/install/lib/libqtharfbuzz.a C:/Users/qt/work/install/lib/libQt5Core.a C:/Users/qt/work/install/lib/libqtpcre2.a C:/Users/qt/work/install/lib/libQt5Widgets.a C:/Users/qt/work/install/lib/libQt5Gui.a C:/Users/qt/work/install/lib/libqtlibpng.a C:/Users/qt/work/install/lib/libqtharfbuzz.a C:/Users/qt/work/install/lib/libQt5Core.a C:/Users/qt/work/install/lib/libqtpcre2.a   
+Cflags: -DQT_UITOOLS_LIB -I${includedir}/QtUiTools -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets
+

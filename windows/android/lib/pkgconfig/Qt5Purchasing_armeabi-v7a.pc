@@ -1,0 +1,13 @@
+prefix=C:/Users/qt/work/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Purchasing
+Description: Qt Purchasing module
+Version: 5.15.2
+Libs: -L${libdir} -lQt5Purchasing_armeabi-v7a 
+Cflags: -DQT_PURCHASING_LIB -I${includedir}/QtPurchasing -I${includedir}
+Requires: Qt5Core_armeabi-v7a Qt5AndroidExtras_armeabi-v7a
+

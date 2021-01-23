@@ -1,0 +1,14 @@
+prefix=C:/Users/qt/work/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Multimedia
+Description: Qt Multimedia module
+Version: 5.15.2
+Libs: -L${libdir} -lQt5Multimedia 
+Libs.private: C:/Users/qt/work/install/lib/libQt5Network.a C:/Users/qt/work/install/lib/libQt5Gui.a C:/Users/qt/work/install/lib/libqtlibpng.a C:/Users/qt/work/install/lib/libqtharfbuzz.a C:/Users/qt/work/install/lib/libQt5Core.a C:/Users/qt/work/install/lib/libqtpcre2.a    
+Cflags: -DQT_MULTIMEDIA_LIB -I${includedir}/QtMultimedia -I${includedir}
+Requires: Qt5Core Qt5Network Qt5Gui
+
